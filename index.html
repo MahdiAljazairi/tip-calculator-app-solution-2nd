@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header class="hero">
+    <img src="images/logo.svg" alt="Splitter Logo">
+  </header>
+  
+  <div class="calc">
+    <noscript>
+      <div>THE APP REQUIRES <strong>JAVASCRIPT</strong> TO WORK</div>
+    </noscript>
+    
+    <form id="form"> <!-- Not the best id in the world.. -->
+    
+      <div class="inputs">
+        <label>
+          <div class="wrapper">
+            Bill
+            <span class="alert alert-bill" id="alert-bill-nan">Please enter a number</span>
+            <span class="alert alert-bill" id="alert-bill-neg">Can't be negative</span>
+          </div>
+          <div class="wrapper" id="bill-wrapper">
+            <input type="text" pattern="\d*\.?\d+(?:[eE][+-]?\d+)?" id="bill" size="1" placeholder="0">
+          </div>
+        </label>
+
+        <fieldset id="tip-radios">
+          <legend>
+            Select Tip %
+            <span class="alert alert-customtip blue" id="alert-customtip-custom">Custom</span>
+            <span class="alert alert-customtip" id="alert-customtip-nan">Please enter a number</span>
+            <span class="alert alert-customtip" id="alert-customtip-neg">Can't be negative</span>
+          </legend>
+
+          <input type="radio" name="tip" value="5" id="rad-1">
+          <label for="rad-1" class="btn">
+            5%
+          </label>
+
+          <input type="radio" name="tip" value="10" id="rad-2">
+          <label for="rad-2" class="btn">
+            10%
+          </label>
+
+          <input type="radio" name="tip" value="15" id="rad-3">
+          <label for="rad-3" class="btn">
+            15%
+          </label>
+
+          <input type="radio" name="tip" value="20" id="rad-4">
+          <label for="rad-4" class="btn">
+            20%
+          </label>
+
+          <input type="radio" name="tip" value="25" id="rad-5">
+          <label for="rad-5" class="btn">
+            25%
+          </label>
+
+          <input type="text" pattern="\d*\.?\d+%?" class="btn" name="tip" placeholder="Custom" id="rad-c" title="Custom" size="1">
+        </fieldset>
+
+
+        <label>
+          <div class="wrapper">
+            Number of People
+            <span class="alert alert-people" id="alert-people-nan">Please enter a number</span>
+            <span class="alert alert-people" id="alert-people-zero">Can't be zero</span>
+            <span class="alert alert-people" id="alert-people-neg">Can't be negative</span>
+            <span class="alert alert-people" id="alert-people-frac">Can't be less than 1</span>
+            <span class="alert alert-people blue" id="alert-people-floored">Number floored</span>
+          </div>
+          <div class="wrapper" id="people-wrapper">
+            <input type="text" pattern="\d*[1-9]\.?\d*(?:[eE][+-]?\d+)?" id="people" size="1" placeholder="0">
+          </div>
+        </label>
+
+      </div>
+
+      <div class="outputs">
+        <label>
+          <div class="wrapper">
+            Tip Amount <div class="per-person">/ person</div>
+          </div>
+          <output id="tip-amount" for="bill tip-radios people">$0.00</output>
+        </label>
+        <label>
+          <div class="wrapper">
+            Total <div class="per-person">/ person</div>
+          </div>
+          <output id="total" for="bill tip-radios people">$0.00</output>
+        </label>
+
+        <button id="reset" class="btn" type="reset" disabled>RESET</button>
+      </div>
+      
+    </form>
+  </div>
+  
+  <script src="script.js"></script>
+  
+  <!-- ATTRIBUTION -->
+  
+  <div class="attribution">
+    Challenge by&nbsp;<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by&nbsp;<a href="https://www.frontendmentor.io/profile/MahdiAljazairi" target="_blank">Mahdi Aljaza'iri</a>.
+  </div>
+</body>
+</html>
+
+
