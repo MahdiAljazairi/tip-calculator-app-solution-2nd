@@ -41,7 +41,7 @@ Users should be able to:
 
 ### Second Attempt
 
-I have returned to this project and spent some serious amount of effort on responsibily of the page on various -sometimes bizarre- screen sizes.
+I have returned to this project and spent some serious amount of effort on responsibility of the page on different -even bizarre- screen sizes.
 
 I knew I had to use Grid, but I was't sure about what to do to get it the way I want. It needed a great deal of fine-tuning to bring this result. It wasn't a long process, though.
 
