@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: <https://your-solution-url.com>
-- Live Site URL: <https://your-live-site-url.com>
+- Solution URL: <https://www.frontendmentor.io/solutions/no-tipping-here-2nd-attempt-ad3ViqUuT5>
+- Live Site URL: <https://tip-calculator-app-solution-2nd-1234.netlify.app>
 
 ## My process
 
